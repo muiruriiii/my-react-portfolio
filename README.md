@@ -53,7 +53,7 @@ extension of JavaScript, so we have to use className instead of class attribute.
 **6. Why should you not write the following?
 What will happen?**
 
-**<button onClick ={setCounter(counter+1)}>+1</button>;**
+<button onClick ={setCounter(counter+1)}>+1</button>;
 
 The onClick attribute expects a function reference instead of invoking setCounter(counter +1)
 instantly and passing its result to onClick given it’s not a function.
