@@ -4,19 +4,29 @@ import background from '../../assets/background.jpeg';
 
 
 const Header = () => {
+    const openMenu = () => {
+        const sidenav = document.getElementById("sidenav");
+        sidenav.style.right = "0";
+    };
 
+    const closeMenu = () => {
+        const sidenav = document.getElementById("sidenav");
+        sidenav.style.right = "-200px";
+    };
     return (
         <section id="header">
             <div className="container">
                 <nav>
                     <h1><span className="logo">C</span>YNTHIA</h1>
-                    <ul>
-                        <li><a href ="/" >Home</a></li>
-                        <li><a href ="/about" >About</a></li>
-                        <li><a href ="/services" >Services</a></li>
-                        <li><a href="/projects" >Projects</a></li>
-                        <li><a href="/contact" >Contact</a></li>
+                    <ul id="sidenav">
+                        <li><a href ="/" onClick={closeMenu}>Home</a></li>
+                        <li><a href ="/about" onClick={closeMenu} >About</a></li>
+                        <li><a href ="/services" onClick={closeMenu}>Services</a></li>
+                        <li><a href="/projects" onClick={closeMenu}>Projects</a></li>
+                        <li><a href="/contact" onClick={closeMenu}>Contact</a></li>
+                        <i className="fas fa-times" onClick={closeMenu}></i>
                     </ul>
+                    <i className="fas fa-bars" onClick={openMenu}></i>
                 </nav>
                 <div className="row">
                     <div className="header-col-1">

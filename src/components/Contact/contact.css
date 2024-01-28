@@ -9,6 +9,7 @@
     flex-wrap: wrap;
 }
 /*Column Layout*/
+
 .contact-1{
     flex-basis: 35%;
 }
@@ -68,6 +69,16 @@ form placeholder{
     padding: 10px ;
     border-radius: 5px ;
     border: solid black;
+}
+/*Responsiveness*/
+@media only screen and (max-width: 600px) {
+    .contact-1, .contact-2{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+
 }
 
 /*Footer*/
