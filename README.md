@@ -1,6 +1,7 @@
 Deployed Portfolio Link: https://muiruriiii.github.io/my-react-portfolio/
 
 **Questions**
+
 **1. What is NPM?**
 NPM is a package manager for JavaScript that is used to manage and share software packages, libraries,
 frameworks for your application.
@@ -22,20 +23,27 @@ exporting variables, function where when importing them one can use any name unl
 export x.
 
 **How do you import them differently?**
-**An example for export x:
-//name.js**
+
+**An example for export x:**
+
+**//name.js**
+
 export const myName = “Cynthia”;
 
 **//app.js**
+
 import myName from “./name.js”;
 console.log(myName);
 
-**An example for export default x:
-//name.js**
+**An example for export default x:**
+
+**//name.js**
+
 const myName = “Cynthia”;
 export default myName;
 
 **//app.js**
+
 import myVariable from “./name.js” ;
 
 **5. Why do you use className as a property in React and not a class?**
@@ -45,7 +53,8 @@ extension of JavaScript, so we have to use className instead of class attribute.
 **6. Why should you not write the following?
 What will happen?**
 
-<button onClick ={setCounter(counter+1)}>+1</button>;
+**<button onClick ={setCounter(counter+1)}>+1</button>;**
+
 The onClick attribute expects a function reference instead of invoking setCounter(counter +1)
 instantly and passing its result to onClick given it’s not a function.
 
