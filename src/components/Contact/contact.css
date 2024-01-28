@@ -1,0 +1,21 @@
+#contact {
+    margin-top: 30px;
+}
+.container {
+    padding: 10px 10%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Footer*/
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 15px ;
+    background: #262626;
+    font-weight: 30;
+    font-size: 12px;
+    margin-top: 20px;
+}
