@@ -8,6 +8,67 @@
     display: flex;
     flex-wrap: wrap;
 }
+/*Column Layout*/
+.contact-1{
+    flex-basis: 35%;
+}
+.contact-2{
+    flex-basis: 60%;
+}
+.contact-1 p{
+    margin-top: 20px;
+    font-size: 13px;
+}
+.contact-1 p i{
+    color: #0F52BA;
+    margin-right: 15px;
+    font-size:18px;
+}
+.social-icons{
+    margin-top: 20px;
+    font-size:18px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 5px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #0F52BA;
+    transform: translateY(-5px);
+}
+.contact-2 form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 5px;
+    margin: 13px 0;
+    color: #ffffff;
+    font-size: 13px;
+    border-radius: 3px;
+}
+form placeholder{
+    font-size: 5px;
+}
+.btn.btn2{
+    display: inline-block;
+    background: #0F52BA;
+    font-size: 13px;
+    width: 100%;
+    cursor: pointer;
+    margin: 5% 0;
+    color: #ffffff;
+    padding: 10px ;
+    border-radius: 5px ;
+    border: solid black;
+}
 
 /*Footer*/
 .copyright{
