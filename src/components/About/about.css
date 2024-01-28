@@ -1,0 +1,12 @@
+#about {
+    padding: 10px 0;
+    color: #ababab;
+}
+.container {
+    padding: 10px 10%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
